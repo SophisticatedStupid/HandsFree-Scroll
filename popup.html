@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HandsFree Scroll</title>
+  <link rel="stylesheet" href="popup.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="header">
+    <h1>HandsFree Scroll</h1>
+    <div class="theme-toggle">
+      <button id="lightModeBtn" title="Light Mode">☀️</button>
+      <button id="darkModeBtn" title="Dark Mode">🌙</button>
+      <button id="systemModeBtn" title="System Mode">💻</button>
+    </div>
+  </div>
+  
+  <div class="layout-buttons">
+    <button id="verticalLayoutBtn">Vertical Layout</button>
+    <button id="horizontalLayoutBtn">Horizontal Layout</button>
+    <button id="customLayoutBtn">Custom Layout</button>
+  </div>
+  
+  <div id="controlsContainer" class="vertical-layout">
+    <!-- Main controls -->
+    <div id="enableControl" class="control-item">
+      <label for="enableToggle">
+        Enable Extension: 
+        <input type="checkbox" id="enableToggle">
+      </label>
+    </div>
+    
+    <div id="voiceControl" class="control-item">
+      <label for="voiceToggle">
+        Voice Control: 
+        <input type="checkbox" id="voiceToggle">
+      </label>
+    </div>
+    
+    <div id="speedControl" class="control-item">
+      <label for="speedSlider">
+        Scroll Speed: <span id="speedValue">20</span>
+      </label>
+      <input type="range" id="speedSlider" min="5" max="100" value="20">
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Created by <a href="https://github.com/sophisticatedStupid" id="authorLink" target="_blank">Khan Tahsin Abrar</a></p>
+    <p><a href="https://github.com/SophisticatedStupid/HandsFree-Scroll.git" id="projectLink" target="_blank">Project</a> Version 1.0</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
