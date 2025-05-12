@@ -1,0 +1,58 @@
+body {
+  width: 300px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #4285f4;
+}
+
+.control-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.preset-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
+
+#startStopBtn, #voiceControlBtn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+
+#voiceStatus {
+  text-align: center;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.command-list {
+  font-size: 0.9em;
+  color: #666;
+}

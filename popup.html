@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Scroll Extension</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Auto Scroll Controls</h2>
+  
+  <div class="control-section">
+    <h3>Speed Control</h3>
+    <input type="range" id="speedSlider" min="1" max="20" value="5">
+    <span id="speedValue">5</span>
+    
+    <div class="preset-buttons">
+      <button id="slowBtn">Slow</button>
+      <button id="mediumBtn">Medium</button>
+      <button id="fastBtn">Fast</button>
+    </div>
+    
+    <button id="startStopBtn">Start Scrolling</button>
+  </div>
+  
+  <div class="control-section">
+    <h3>Voice Commands</h3>
+    <button id="voiceControlBtn">Enable Voice Control</button>
+    <div id="voiceStatus">Voice control is disabled</div>
+    
+    <div class="command-list">
+      <p>Available commands:</p>
+      <ul>
+        <li>"start scrolling" - begins auto scroll</li>
+        <li>"stop scrolling" - stops auto scroll</li>
+        <li>"scroll faster" - increases speed</li>
+        <li>"scroll slower" - decreases speed</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
